@@ -1,0 +1,25 @@
+//write a c program to read n value and print stars n lines like following:
+input: n = 5;
+output:
+    *
+   * *
+  * * *
+ * * * *
+* * * * *
+#include <stdio.h>
+ main()
+{
+    int n,j,k;
+    for(n=1;n<=5;n++) 
+	{ 
+		for(j=4;j>=n;j--)
+        {
+            printf(" ");
+        }
+        for(k=1;k<=(2*n-1);k++)
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
+}
